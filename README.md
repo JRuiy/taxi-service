@@ -25,17 +25,19 @@ There are also relations between the tables. The complete database structure is 
 
 
 ## :globe_with_meridians: Used technologies
+- Java 11
 - Maven
 - JDBC
 - MySQL
 - Servlet API
 - JSP/JSTL
+- HTML
 - Log4j2
 
 ## :zap: Setting up
 1. First of all, you need to prepare the database. (For developing this web application, MySQL was used.) Create a schema and copy everything from the `resources/init_db.sql` file, then execute it in your DBMS.
 2. To set up the project input correct credentials. In the class ConnectionUtil, substitute the highlighted variables.
    ![img.png](img/credentials.png)
-3. After that, you need to configure Tomcat. To do this, you have to choose `war exploded` and leave only `/` in the application context.
+3. After that, you need to configure Tomcat **(Use only Tomcat 9)**. To do this, you have to choose `war exploded` and leave only `/` in the application context.
    ![img_1.png](img/tomcat.png)
 4. When you launch application you have to add new driver for further action. So, redirect to url `/drivers/add` and then go to `/login`.
